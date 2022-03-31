@@ -1,0 +1,100 @@
+body{
+    background: rgb(102,98,98);
+    background: linear-gradient(0deg, rgba(102,98,98,1) 0%, rgba(0,0,0,1) 100%);
+    height: 95vh;
+}
+
+#text{
+    color:rgb(221, 215, 215);
+    text-align: center;
+    text-decoration: underline solid;
+}
+
+.row{
+    height: 45vh;
+    margin: 2.2em 0px 0px 1.5vw;
+}
+
+.column {
+    background-color: rgb(221, 215, 215);
+    float: left;
+    width: 28.5vw;
+    height: 75vh;
+    padding: 10px;
+    margin-left: 1em;
+    color: rgb(0, 0, 0);
+    border: 2px ridge #ac0000;
+    text-align: center  ;
+    box-shadow: 5px 5px 10px 1px #2b0000;
+    position: relative;
+}
+
+.score{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 8em;
+}
+
+.player{
+    font-size: 4em;
+    margin-top: 0;
+}
+
+.piece{
+    font-size: 3em;
+}
+
+#turn{
+    text-align: center;
+    text-decoration: underline solid;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cont{
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    margin-top: 2.5em;
+}
+
+.cont > div{
+    background-color: rgba(188, 189, 221, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5em;
+    align-content: center;
+    justify-items: center;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px #011c00;
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+}
+
+.cont > div:hover{
+    background-color: rgb(161, 162, 255);
+}
+
+.container{
+    width: fit-content;
+}
+
+@media all and (min-width: 1367px ) {
+    .cont{
+        margin-left: 2.7em;
+        margin-top: 8em;
+    }
+
+    .score{
+        margin-left: 12em;
+    }
+}
