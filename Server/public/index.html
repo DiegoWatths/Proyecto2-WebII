@@ -11,14 +11,7 @@
         <div class="container">
             <h1 id="text">WELCOME TO TIC-TAC-TOE WITH SOCKET.IO!!</h1>
             <div class="row">
-                <div class="column" id="player1">
-                    <h1 class="player">You</h1>
-                    <h2 class="piece" style="color: #b00b69;">X</h2>
-                    <div class="score">
-                        <h1 id="yourWins">Wins: 69</h1>
-                        <h1 id="yourStatus">DRAW!!</h1>
-                    </div>
-                </div>
+                <div class="column" id="player1"></div>
                 <div class="column" id="num">
                     <div class="cont">
                         <div class="btn" id="1"></div>
@@ -32,15 +25,7 @@
                         <div class="btn" id="9"></div>
                     </div>
                 </div>
-                <div class="column" id="player2">
-                    <h1 class="player">Your Opponent</h1>
-                    <h2 class="piece" style="color: #69b00b;">O</h2>
-                    <div class="score">
-                        <h1 id="yourWins">Wins: 69</h1>
-                        <h1 id="yourStatus">DRAW!!</h1>
-                    </div>
-                </div>
-            </div>
+                <div class="column" id="player2"></div>
             <h1 id="turn">It's <span id="who" style="color: #be1616;"></span> turn</h1>
         </div>
         <script src="/socket.io/socket.io.js"></script>

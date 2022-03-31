@@ -61,7 +61,7 @@ io.on('connection', function(socket){
     io.emit('userData', currentPlayers[index])
 
     socket.on('Move', function(arg){
-        console.log(`El jugador ${arg.Player} hizo una movida al cubiculo #${arg.Position} pero no lo he codificado yet ☺`);
+        console.log(`El jugador ${arg.Player} hizo una movida al cubiculo #${arg.Position}`);
         
         if(!(moves.length == 0)){
             if(!(arg.Player == moves[moves.length - 1].Player)){
